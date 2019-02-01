@@ -12,14 +12,8 @@ x = 0
 while x < 100
   x += 1
   wordstring = "" 
-  if x % 3 == 0 
-    wordstring = "Fizz"
-  end
-  if x % 5 == 0 
-    wordstring += "Buzz"
-  end
-  if wordstring == ""
-    wordstring = x.to_s
-  end
+  if x % 3 == 0 then wordstring = "Fizz" end
+  if x % 5 == 0 then wordstring += "Buzz" end
+  if wordstring == "" then wordstring = x.to_s end
   print wordstring + " "
 end
